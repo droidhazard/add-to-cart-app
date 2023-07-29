@@ -1,8 +1,69 @@
-html,
-body {
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: inherit;
+}
+
+html,
+body {
   height: 100%;
   width: 100%;
+}
+
+body {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kanit";
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  background-color: white;
+  padding: 20px;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.element {
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#add-button {
+  background: linear-gradient(to right, rgb(255, 178, 34), rgb(255, 169, 9));
+  border: none;
+  color: white;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all .3s ease-out;
+  cursor: pointer;
+}
+
+#add-button:hover {
+  border-radius: 10px;
+  color: black;
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.164);
+}
+
+#input-field {
+  background-color: whitesmoke;
+}
+
+#input-field:hover,
+#input-field:active,
+#input-field:focus {
+  outline: 2px solid green;
 }
